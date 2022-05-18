@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbarSize="2sp"
+    tools:context=".TelaTeste">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Selecione as características que mais se adaptem a sua personalidade:"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/grupo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:scrollbarSize="8sp">
+
+                <CheckBox
+                    android:id="@+id/introme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Intrometido"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/extrove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Extrovertido"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/introver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Introvertido"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/socia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Sociável"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/ativo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Ativo"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/lerdo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Lerdo"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/lider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Líder"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/gentil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Gentil"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/resist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Resistente"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/perse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Perseverante"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/reser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Reservado"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/otim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Otimista"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/pessi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Pessimista"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/atento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Atento"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/rapido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Rápido"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/since"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:minHeight="32dp"
+                    android:text="Sincero"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/educd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Educado"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/encan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Encantador"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/perspi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Perspicaz"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/competi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Competitivo"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/autoconf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Autoconfiante"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/ansio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Ansioso"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/amiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Amigável"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/acessi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Acessível"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/sensi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Sensível"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/frio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Frio"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/silen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Silencioso"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/ironico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Irônico"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/ciume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Ciumento"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/confi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000000"
+                    android:text="Confiável"
+                    android:textSize="26sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

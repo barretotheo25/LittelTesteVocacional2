@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "778922361197",
+    "project_id": "littletestevocacional2",
+    "storage_bucket": "littletestevocacional2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778922361197:android:28eed6f54fba38e8499a64",
+        "android_client_info": {
+          "package_name": "com.example.littletestevocacional2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778922361197-rkuj416qpi5l7m113vg2tlnqst4qsd4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg8tqFBvgLm0cvIDAf2O7e-0RH5vEMwtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778922361197-rkuj416qpi5l7m113vg2tlnqst4qsd4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
