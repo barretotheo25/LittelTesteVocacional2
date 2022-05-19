@@ -11,9 +11,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
+import com.example.litteltestevocacional2.databinding.TelaLoginBinding;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
@@ -23,17 +28,37 @@ import com.google.firebase.auth.FirebaseAuth;
 public class TelaLogin extends AppCompatActivity {
     private EditText email_login, senha_login;
     private Button entrar;
-    CheckBox mostrarSenha;
+    private TelaLoginBinding binding;
+
     String[] mensagens = {"Preencha todos os campos"};
     GoogleSignInClient googleSignInClient;
+    CheckBox mostrarSenhaOlho;
+    SignInButton botaoGoogle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_login);
-        mostrarSenha = findViewById(R.id.mostrarSenha);
+
+        mostrarSenhaOlho = findViewById(R.id.mostrarSenhaOlho);
+
+        botaoGoogle = findViewById(R.id.botaoGoogle);
+
         IniciarComponentes();
+
         getSupportActionBar().hide();
+
+        binding = TelaLoginBinding.inflate(getLayoutInflater());
+
+        setContentView(binding.getRoot());
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(
+                GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken("")
+                .requestEmail()
+                .build();
+
+        googleSignInClient = GoogleSignIn.getClient(this, gso);
+
         entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +74,13 @@ public class TelaLogin extends AppCompatActivity {
                 }else {
                     AutenticarUsuario(v);
                 }
+            }
+        });
+
+        binding.botaoGoogle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }
@@ -87,7 +119,7 @@ public class TelaLogin extends AppCompatActivity {
     }
 
     public void mostrarSenha(View s) {
-        if (mostrarSenha.isChecked()){
+        if (mostrarSenhaOlho.isChecked()){
             senha_login.setInputType(InputType.TYPE_CLASS_TEXT);
         }else{
             senha_login.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
